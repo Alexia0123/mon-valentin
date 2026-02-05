@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Question très importante 💌</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .box {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #e63946;
+        }
+
+        button {
+            margin: 10px;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        .yes {
+            background-color: #ff4d6d;
+            color: white;
+        }
+
+        .no {
+            background-color: #adb5bd;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h1>💖 Est-ce que tu veux être mon Valentin ? 💖</h1>
+    <button class="yes" onclick="yesClick()">Oui 😍</button>
+    <button class="no" onclick="noClick()">Non 🙃</button>
+</div>
+
+<script>
+    function yesClick() {
+        document.body.innerHTML = `
+            <div style="display:flex;align-items:center;justify-content:center;height:100vh;font-family:Arial;">
+                <h1 style="color:#e63946;">Yaaay 😍 Je suis trop heureuse 💕</h1>
+            </div>
+        `;
+    }
+
+    function noClick() {
+        alert("Mauvaise réponse 😤 Réessaie 😘");
+    }
+</script>
+
+</body>
+</html>
